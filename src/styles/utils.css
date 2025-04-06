@@ -1,0 +1,60 @@
+.btn {
+  background: none;
+  border: 2px solid var(--bg-secondary);
+  color: var(--text-todo);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: var(--font-sm);
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn:hover {
+  background: var(--clr-accent);
+  border-color: var(--clr-accent);
+  transform: translateY(-10px);
+  box-shadow: 0 0 0.75rem var(--bg-main);
+}
+
+.btn:active {
+  background: var(--clr-accent-secondary);
+}
+
+.fa-plus {
+  color: var(--clr-label);
+}
+
+.btn-utils:hover {
+  color: var(--text-secondary);
+  border-color: transparent;
+  transform: scaleX(1.25);
+}
+
+.btn-edit {
+  color: var(--bg-edit);
+  border-color: var(--bg-edit);
+}
+
+.btn-edit:hover {
+  background: var(--bg-edit);
+}
+
+.btn-danger {
+  color: var(--bg-danger);
+  border-color: var(--bg-danger);
+}
+
+.btn-danger:hover {
+  background: var(--bg-danger);
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: var(--font-md);
+  }
+}

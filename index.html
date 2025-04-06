@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>TODO</title>
+  </head>
+  <body>
+    <main id="app">
+      <h1>Todo App</h1>
+      <div class="container">
+        <div class="todo__container" data-status="todo">
+          <h3 class="todo__container__header">to do</h3>
+          <ul class="todos__list"></ul>
+          <button class="btn btn-todo" data-category="todo">
+            <i class="fa-solid fa-plus"></i>Add Todo
+          </button>
+        </div>
+
+        <div class="todo__container" data-status="doing">
+          <h3 class="todo__container__header">doing</h3>
+          <ul class="todos__list"></ul>
+          <button class="btn btn-todo" data-category="doing">
+            <i class="fa-solid fa-plus"></i>Add Todo
+          </button>
+        </div>
+
+        <div class="todo__container" data-status="done">
+          <h3 class="todo__container__header">done</h3>
+          <ul class="todos__list"></ul>
+          <button class="btn btn-todo" data-category="done">
+            <i class="fa-solid fa-plus"></i>Add Todo
+          </button>
+        </div>
+      </div>
+
+      <div id="modal" class="hidden">
+        <div class="modal__container"></div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
